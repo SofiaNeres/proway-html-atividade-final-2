@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalização de Cadastro</title>
+</head>
+
+<body>
+    <h1>Cadastro Final</h1>
+    <h2>Leia atentamente as informações abaixo e preencha conforme pedido.</h2>
+
+    <label for="turno">Horário do curso</label>
+    <input id="turno" name="turno" list="lista-horarios" placeholder="Digite ou escolha um horário">
+
+    <datalist id="lista-horarios">
+        <option value="07h30 – 11h30">
+        <option value="13h00 – 18h00">
+        <option value="18h30 – 22h30">
+    </datalist>
+
+    <h3>Para realizar o resto da inscrição é necessário ter em mãos os seguintes documentos:</h3>
+
+    <ol>
+        <li>Documento com Foto</li>
+        <li>CPF</li>
+        <li>Comprovante de residência</li>
+        <li>Histórico Escolar do ensino médio</li>
+    </ol>
+
+    <ul>
+        <li>DOCUMENTO COM FOTO</li>
+        <input type="file">
+    </ul>
+
+    <ul>
+        <li>COMPROVANTE DE RESIDÊNCIA</li>
+        <input type="file">
+        <label>
+            <input type="radio" name="comprovante" value="agua">
+            Energia
+        </label>
+
+        <label>
+            <input type="radio" name="comprovante" value="agua">
+            Água
+        </label>
+    </ul>
+
+    <ul>
+        <li>HISTÓRICO ESCOLAR</li>
+        <input type="file">
+    </ul>
+
+    <br>
+    <form>
+        <label for="dataHoje">Data de hoje</label>
+        <input type="date" id="dataHoje" name="dataHoje">
+    </form>
+
+    <br>
+    <label for="msg">Observações:</label>
+    <br>
+
+    <textarea id="msg" name="mensagem" rows="-6" cols="40" placeholder="Escreva aqui..."></textarea>
+
+    <form>
+        <input type="checkbox" id="option1" name="positivo" value="Sim">
+        <label for="vehicle1">Assinale o botão ao lado se você confirma todas suas informações cadastradas.</label><br>
+    </form>
+
+</body>
+
+</html>
